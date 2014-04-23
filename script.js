@@ -62,7 +62,7 @@ var opa = function() {
 		$(".square").mouseenter(function() {
 			var currentOpa = $(this).css("opacity");
 			if(currentOpa < 1){
-				$(this).css({"background-color":colour, "opacity":currentOpa + 0.1});				
+				$(this).css({"background-color":colour, "opacity":currentOpa + 0.1})								
 			}
 		});
 	});
