@@ -27,7 +27,6 @@ var reset = function() {
 var singleColour = function() {
 	$(".single").click(function() {
 		reset();
-		//$(".square").css("opacity", "1");
 		var colour = getColour();
 		$(".square").mouseenter(function() {
 			$(this).css("background-color", colour);
@@ -37,7 +36,6 @@ var singleColour = function() {
 var randomColours = function() {
 	$(".random").click(function() {
 		reset()
-		//$(".square").css("opacity", "1");
 		$(".square").mouseenter(function() {
 			$(this).css("background-color", getColour());
 		});	
