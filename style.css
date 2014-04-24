@@ -1,5 +1,8 @@
-.square {
+html {
+background-color: #009999
+}
 
+.square {
 float: left;
 }
 
@@ -8,6 +11,7 @@ margin: auto;
 width: 960px;
 height: 960px;
 border: 1px solid black;
+background-color: white;
 }
 
 .top {
@@ -17,4 +21,7 @@ text-align: center;
 button {
 height: 45px;
 width: 115px;
+margin-left: 15px;
+margin-right: 15px;
+border-radius: 10px;
 }

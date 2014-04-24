@@ -19,7 +19,7 @@ var drawGrid = function(boxSize) {
 
 var reset = function() {
 	$(".container").empty();
-	var howBig = prompt("How big?");
+	var howBig = prompt("What size grid do you want?");
 	drawGrid(howBig);
 	$(".square").css("background-color", "white");
 };
@@ -60,7 +60,7 @@ var opa = function() {
 		var colour = getColour();
 		$(".square").css("opacity", "0");
 		$(".square").mouseenter(function() {
-			var currentOpa = $(this).css("opacity");
+			var currentOpa = $(this).css("opacity");			
 			if(currentOpa < 1){
 				$(this).css({"background-color":colour, "opacity":currentOpa + 0.1})								
 			}
