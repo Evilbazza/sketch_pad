@@ -58,11 +58,14 @@ var opa = function() {
 	$(".opa").click(function() {
 		reset();
 		var colour = getColour();
-		$(".square").css("opacity", "0");
+		$(".square").css("background-color", colour);
 		$(".square").mouseenter(function() {
 			var currentOpa = $(this).css("opacity");			
-			if(currentOpa < 1){
-				$(this).css({"background-color":colour, "opacity":currentOpa + 0.1})								
+			if(currentOpa >= 0.1){
+				$(this).css("opacity", currentOpa - 0.1)				
+			}
+			else {
+				$(this).css("opacity", "0");
 			}
 		});
 	});
